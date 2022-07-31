@@ -101,7 +101,7 @@ textarea:focus {
 }
 
 .blue {
-    color: #00aeff;
+    color: #00aeff !important;
 }
 
 .link__hover-effect {
@@ -600,7 +600,7 @@ footer {
 }
 
 .footer__logo--img {
-    width: 60px;
+    width: 64px;
     height: 40px;
 }
 
@@ -613,9 +613,30 @@ footer {
 }
 
 .footer__social--link,
-.footer__copyright {
+.footer__copyright,
+.footer__logo--popper {
     color: white;
 }
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0%;
+    top: 15px;
+    font-weight: 700;
+    opacity: 0;
+    transition: 300ms ease;
+}
+
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+}
+
 
 /*
 
